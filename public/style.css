@@ -5,8 +5,8 @@
 h1
 {
     text-align: center;
-    background-color:  #10b0f5;
-    color:  rgba(71, 251, 137, 0.612);
+    background-color: rgb(21, 180, 233);
+    color: rgb(69, 240, 22);
 }
 input,
 button
@@ -33,7 +33,7 @@ button
 #chats dt
 {
     margin: 2vw 0;
-    border:1px solid rgb(245, 9, 9);
+    border:1px solid #333;
     border-radius: 3vw;
     padding:1vw 3vw;
     display: inline-block;
@@ -43,19 +43,19 @@ button
     margin-left: 8vw;
     position: relative;
     background-color: #ccc;
-    border-radius:3vw;
+    border-radius: 3vw;
     padding:1vw 3vw;
 }
 #chats dd::before
 {
-    content:　"";
+    content: '';
     display: block;
     position: absolute;
     top: 50%;
     left: -6vw;
     margin-top: -7vw;
     border: 3vw solid transparent;
-    border-right: 8vw solid seashell;
+    border-right: 8vw solid #ccc;
     transform: rotate(40deg);
     z-index: -1;
 }
