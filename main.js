@@ -11,7 +11,7 @@ const socketio = io();
        username = name.value;
        event.preventDefault();
        nameform.style.display ="none";
-       form.style.display ="block"
+       form.style.display ="block";
    })
 
     form.addEventListener('submit', function(event){
