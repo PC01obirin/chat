@@ -11,4 +11,5 @@ const socketio = io();
     socketio.on('message',function(msg){
       const li = document.createElement("li");
       li.append(msg);
-      chats.append(li);});
+      chats.append(li);
+    });
