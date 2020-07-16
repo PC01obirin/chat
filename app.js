@@ -11,6 +11,11 @@ let messages = []; // 過去のメッセージを保存しておく配列
 
 // プログラム終了時に過去メッセージをファイルに保存
 process.on('exit', function (code) {
+        // .data ディレクトリが存在しなければ、ディレクトリを作成
+        if (!fs.existsSync('.data')) {
+            fs.mkdirSync('.data');
+        }
+        // 過去メッセージをファイルに保存
     fs.writeFileSync('data.json', JSON.stringify(messages));
     console.log('Exiting');
 });
